@@ -10,8 +10,8 @@
     
     <p>olá este é meu perfil</p>
 
-<h1> Nascimento </h1>    
-    <p>Meu nome é Kelvin Fellipe Da Silva De Souza tenho 15 anos e moro em Toledo Paraná</p>
+<h1> quem sou eu? </h1>    
+    <p>Meu nome é Kelvin Fellipe Da Silva De Souza tenho 15 anos nasci no dia 06 de abril de 2011 , moro em Toledo Paraná e atualmente sou um estudante do IF de Toledo</p>
     
 </body>
 </html>
