@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>nossa pagina html</title>
-</head>
+    <title>Nossa Página HTML - Perfis & Saúde</title>
     
- <style>
+    <style>
         :root {
-            background-color: #2F9941;
+            --primary-color: #2F9941;
+            --accent-color: #222222;
+            --bg-light: #f4f1e8;
+            --card-bg: #f0f9ff;
+            --card-border: #bae6fd;
         }
 
         * {
@@ -18,28 +21,46 @@
         }
 
         body {
-          
+            font-family: Arial, sans-serif;
             line-height: 1.6;
-            background-color: #2F9941;
-            color: black;
+            background-color: var(--primary-color);
+            color: #333;
         }
 
         header {
-          
-            color: black;
+            background-color: var(--primary-color);
+            color: white;
             text-align: center;
             padding: 2.5rem 1rem;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         header h1 {
-            font-size: 2.2rem;
+            font-size: 2.5rem;
             margin-bottom: 0.5rem;
         }
 
         header p {
             font-size: 1.1rem;
             opacity: 0.9;
+        }
+
+        nav {
+            background-color: var(--accent-color);
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #82ec97;
         }
 
         .container {
@@ -62,17 +83,18 @@
         }
 
         section {
-           background-color: white;
+            background-color: white;
             padding: 2rem;
             margin-bottom: 1.5rem;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         h2 {
             border-bottom: 2px solid #caf0f8;
             padding-bottom: 0.5rem;
             margin-bottom: 1rem;
+            color: #1a1a1a;
         }
 
         h3 {
@@ -90,73 +112,170 @@
 
         .grid-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 1.5rem;
             margin-top: 1rem;
         }
 
         .card {
-            background-color: #f0f9ff;
-            border: 1px solid #bae6fd;
+            background-color: var(--card-bg);
+            border: 1px solid var(--card-border);
             border-radius: 6px;
             padding: 1.2rem;
         }
 
         .card h4 {
-           
             margin-bottom: 0.5rem;
+            color: #0369a1;
+        }
+
+     
+        .carousel-container {
+            position: relative;
+            max-width: 100%;
+            margin: 1.5rem 0;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+
+        .carousel-slides {
+            display: flex;
+            width: 300%; /* 100% para cada imagem */
+            animation: slide 12s infinite;
+        }
+
+        .carousel-slide {
+            width: 33.333%;
+            flex-shrink: 0;
+        }
+
+        .carousel-slide img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            display: block;
+        }
+
+        @keyframes slide {
+            0%, 28% { transform: translateX(0%); }
+            33%, 61% { transform: translateX(-33.333%); }
+            66%, 94% { transform: translateX(-66.666%); }
+            100% { transform: translateX(0%); }
+        }
+
+     
+        .video-embed-container {
+            position: relative;
+            padding-bottom: 56.25%; 
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+
+        .video-embed-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .video-link-box {
+            background-color: #f8fafc;
+            border: 1px dashed var(--primary-color);
+            padding: 1rem;
+            border-radius: 6px;
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        .btn-video {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 0.5rem;
+            font-weight: bold;
+        }
+
+        .btn-video:hover {
+            background-color: #247732;
         }
 
         footer {
             text-align: center;
             padding: 1.5rem;
-            background-color: var(--primary-color);
+            background-color: var(--accent-color);
             color: white;
             margin-top: 2rem;
         }
     </style>
-<body style="margin:0; font-family: Arial sans-serif; background-color:#f4f1e8; color:#333;">
-
-  
-    <header style="background-color:#2F9941 ; color:white; padding:30px; text-align:center;">
-        <h1 style="margin:0; font-size:40px;">Perfis</h1>
-        <p style="font-size:18px;">
-            Entenda os acontecimentos de nossas vidas
-        </p>
-    </header>
-
-    <nav style="background-color:#222; padding:15px; text-align:center;">
-    <a href="Guilherme-perfil.html" style="color:white; margin:10px; text-decoration:none;">Perfil Guilherme</a>
-
-    <a href="Lorenzo-perfil.html" style="color:white; margin:10px; text-decoration:none;">Perfil Lorenzo</a>
-
-    <a href="Kelvin-Perfil.html" style="color:white; margin:10px; text-decoration:none;">Perfil Kelvin</a>
-    </nav>
-    <br>
-    <h1 style="margin:0; font-size:40px;text-align:center;">Onde vivemos</h1>
-   <section>
-            <h2>municipio</h2>
-            <p> O município de Toledo teve seu povoamento iniciado no início da década de 1940, impulsionado pela ação da Empresa Pinho e Terra Ltda. e, posteriormente, pela Maripá, que loteou a região atraindo colonos de origem gaúcha e catarinense, em sua maioria descendentes de alemães e italianos. A emancipação política veio rapidamente em 14 de dezembro de 1951, transformando a região em um forte polo de desenvolvimento e povoamento no Oeste do Paraná.
-  Localizado na Região Oeste do Estado do Paraná, Toledo possui um relevo suavemente ondulado e solo de terra roxa, de altíssima fertilidade. O clima é subtropical úmido, favorecendo a forte vocação agrícola. A cidade destaca-se nacionalmente como o Capital Paranaense do Agronegócio, liderando frequentemente o ranking estadual do Valor Bruto da Produção Agropecuária, impulsionada por uma cadeia produtiva robusta na suinocultura, avicultura, bovinocultura de leite e grãos.
- A pluralidade cultural de Toledo reflete a herança dos pioneiros sulistas aliada à integração com novos moradores de diversas partes do país e do exterior. Entre os seus maiores símbolos culturais e gastronômicos está a Festa Nacional do Porco no Rolete, evento tradicional que atrai milhares de visitantes anualmente e celebra a força da suinocultura local. Outro marco geográfico e de lazer da cidade é o Parque Ecológico Diva Paim Barth, popularmente conhecido como o "Lago Municipal", que serve como ponto de encontro, cartão-postal e centro da vida social e esportiva dos toledanos.
-                </p>
-        </section> 
-
+</head>
 <body>
 
     <header>
-        <h1>Tema Contemporâneo Transversal (TCT)</h1>
-        <p>Macroárea: Saúde | Tema: Cuidados com a Saúde</p>
+        <h1>Perfis</h1>
+        <p>Entenda os acontecimentos de nossas vidas</p>
     </header>
 
-    <div class="container">
+    <nav>
+        <a href="Guilherme-perfil.html">Perfil Guilherme</a>
+        <a href="Lorenzo-perfil.html">Perfil Lorenzo</a>
+        <a href="Kelvin-Perfil.html">Perfil Kelvin</a>
+    </nav>
+
+    <main class="container">
+
+       
+        <section>
+            <h2>Onde Vivemos - Município de Toledo</h2>
+            <p>
+                O município de Toledo teve seu povoamento iniciado no início da década de 1940, impulsionado pela ação da Empresa Pinho e Terra Ltda. e, posteriormente, pela Maripá, que loteou a região atraindo colonos de origem gaúcha e catarinense, em sua maioria descendentes de alemães e italianos. A emancipação política veio rapidamente em 14 de dezembro de 1951, transformando a região em um forte polo de desenvolvimento e povoamento no Oeste do Paraná.
+            </p>
+            <br>
+            <p>
+                Localizado na Região Oeste do Estado do Paraná, Toledo possui um relevo suavemente ondulado e solo de terra roxa, de altíssima fertilidade. O clima é subtropical úmido, favorecendo a forte vocação agrícola. A cidade destaca-se nacionalmente como a Capital Paranaense do Agronegócio, liderando frequentemente o ranking estadual do Valor Bruto da Production Agropecuária.
+            </p>
+
+        
+            <h3 style="margin-top: 1.5rem;">Galeria do Município</h3>
+            <div class="carousel-container">
+                <div class="carousel-slides">
+                    <div class="carousel-slide">
+                        
+                        <img src="imagems\lago-municipal-de-toledo.jpg" alt="Parque Ecológico Diva Paim Barth">
+                    </div>
+                    <div class="carousel-slide">
+                     
+                        <img src="imagems\toledo_igma.jpg" alt="Vista da Cidade de Toledo">
+                    </div>
+                    <div class="carousel-slide">
+                       
+                        <img src="imagems\porco-no-rolete-2.jpg" alt="Festa do Porco no Rolete">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       
+        <section style="background-color: black; color: white;">
+            <h2 style="color: white; border-bottom-color: rgba(255,255,255,0.3);">Tema Contemporâneo Transversal (TCT)</h2>
+            <p>Macroárea: Saúde | Tema: Cuidados com a Saúde</p>
+        </section>
+
         <div class="meta-info">
             <p><strong>Macroárea TCT:</strong> Saúde</p>
             <p><strong>Tema Central:</strong> Cuidados com a Saúde Integrativa e Preventiva</p>
             <p><strong>Público-alvo:</strong> Estudantes do Ensino Fundamental II e Ensino Médio</p>
             <p><strong>Objetivo:</strong> Promover a conscientização sobre hábitos saudáveis, bem-estar físico, mental e a prevenção de doenças.</p>
         </div>
-
 
         <section>
             <h2>1. Introdução</h2>
@@ -165,7 +284,6 @@
             </p>
         </section>
 
-      
         <section>
             <h2>2. Eixos dos Cuidados com a Saúde</h2>
             <div class="grid-container">
@@ -188,7 +306,6 @@
             </div>
         </section>
 
-   
         <section>
             <h2>3. Conexão Interdisciplinar</h2>
             <p>Os TCTs perpassam por diversas disciplinas escolares de forma integrada:</p>
@@ -200,7 +317,6 @@
             </ul>
         </section>
 
-     
         <section>
             <h2>4. Recomendações para o Dia a Dia</h2>
             <ol>
@@ -211,12 +327,33 @@
             </ol>
         </section>
 
-    </div>
+      
+        <section>
+            <h2>5. Recortes em Vídeo</h2>
+            
+         
+         
+<h3>Vídeo Incorporado</h3>
+<p>Assista diretamente na página:</p>
+
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/9q7WaQqtWK4?si=n8SCV-DH2j62t7JK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+
+<h3 style="margin-top: 2rem;">Link Externo</h3>
+<div class="video-link-box">
+    <p>Caso prefira assistir na plataforma oficial:</p>
+    <a href="https://www.youtube.com/watch?v=9q7WaQqtWK4" target="_blank" rel="noopener noreferrer" class="btn-video">
+        Assistir no YouTube ➔
+    </a>
+</div>
+        </section>
+
+    </main>
 
     <footer>
         <p>Trabalho Contemporâneo Transversal (TCT); 2026 - Projeto Educacional de Saúde</p>
     </footer>
 
-</body>
 </body>
 </html>
