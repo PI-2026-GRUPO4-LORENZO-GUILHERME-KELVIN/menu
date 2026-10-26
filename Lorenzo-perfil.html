@@ -4,98 +4,284 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio de Lorenzo Babeto Falkowiski</title>
+    
+    <style>
+        :root {
+            --primary-color: #2F9941;
+            --primary-hover: #247732;
+            --dark-bg: #222525;
+            --light-bg: #f4f1e8;
+            --text-color: #333333;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--light-bg);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 30px;
+            text-align: center;
+            font-size: 38px;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        p {
+            text-align: justify;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 32px;
+            text-align: center;
+            color: var(--primary-color);
+            margin: 40px 0 20px 0;
+        }
+
+        h3 {
+            color: var(--primary-color);
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .card-section {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            margin-bottom: 30px;
+        }
+
+        ul {
+            font-size: 19px;
+            margin-left: 25px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        /* --- CARROSSEL DE IMAGENS --- */
+        .carousel-container {
+            position: relative;
+            max-width: 100%;
+            margin: 25px 0;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        .carousel-slides {
+            display: flex;
+            width: 300%;
+            animation: slide 12s infinite;
+        }
+
+        .carousel-slide {
+            width: 33.333%;
+            flex-shrink: 0;
+        }
+
+        .carousel-slide img {
+            width: 100%;
+            height: 380px;
+            object-fit: cover;
+            display: block;
+        }
+
+        @keyframes slide {
+            0%, 28% { transform: translateX(0%); }
+            33%, 61% { transform: translateX(-33.333%); }
+            66%, 94% { transform: translateX(-66.666%); }
+            100% { transform: translateX(0%); }
+        }
+
+        /* --- VÍDEOS INCORPORADOS (EMBED) --- */
+        .video-embed-container {
+            position: relative;
+            padding-bottom: 56.25%; /* Proporção 16:9 */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            border-radius: 8px;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+
+        .video-embed-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .cronica-box {
+            background-color: var(--light-bg);
+            padding: 25px;
+            border-left: 5px solid var(--primary-color);
+            font-size: 19px;
+            line-height: 1.7;
+            border-radius: 4px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: var(--dark-bg);
+            color: white;
+            font-size: 16px;
+            margin-top: 50px;
+        }
+    </style>
 </head>
 
-<body style="margin:0; font-family: Arial, sans-serif; background-color:#f4f1e8; color:#333; line-height: 1.6;">
+<body>
 
-    <header style="background-color:#2F9941; color:white; padding:30px; text-align:center; font-size:42px; font-weight: bold;">
+    <header>
         Quem sou eu?
     </header>
 
-    <p style="text-align: justify; font-size: 22px; margin-left: 5%; margin-right: 5%; margin-top: 30px;">
-        Olá, meu nome é Lorenzo Babeto Falkowiski, nasci na cidade de Maringá no Paraná, no dia 17/10/11. Atualmente sou estudante do IFPR Campus Toledo, que na verdade é uma expansão do IF de Assis Chateaubriand.
-    </p>
+    <main class="container">
 
-    <p style="text-align: justify; font-size: 22px; margin-left: 5%; margin-right: 5%;">
-        Sempre fui um bom aluno, nunca fiquei abaixo da média em nenhum dos vários anos em que estudo. Meus estudos se iniciaram na Escola Intentos, na própria cidade de Toledo; nessa escola eu permaneci desde o primário até o meu primeiro ano do ensino fundamental, e apesar de passar tanto tempo lá, nunca tive grandes problemas. Logo após finalizar o primeiro ano tive que mudar de escola, sendo transferido para o Colégio Alfa, no qual estudei desde o primeiro ano do ensino fundamental até o nono ano. Assim foi encerada minha trajetória naquela escola, pois consegui vaga no IFPR.
-    </p>
+      
+        <section class="card-section">
+            <p>
+                Olá, meu nome é Lorenzo Babeto Falkowiski, nasci na cidade de Maringá no Paraná, no dia 17/10/11. Atualmente sou estudante do IFPR Campus Toledo, que na verdade é uma expansão do IF de Assis Chateaubriand.
+            </p>
 
-    
-    <h2 style="font-size: 36px; text-align:center; color:#2F9941; margin-top: 40px;">Meu nascimento</h2>
-    <p style="text-align: justify; font-size: 22px; margin-left: 5%; margin-right: 5%;">
-        Eu me lembro bem do mês de outubro, quando nasceu Lorenzo Babeto Falkowiski. Ele veio ao mundo em Maringá, no Paraná, trazendo muita alegria para nossa família. A expectativa pela sua chegada era grande, e finalmente chegou o momento de conhecê-lo. Foi um dia marcante para todos nós, daqueles que ficam guardados na memória. Desde então, Lorenzo começou sua própria história, cercado pela família e por novas experiências. Seu nascimento foi o início de uma caminhada que, com o passar dos anos, trouxe muitos momentos, aprendizados e lembranças.
-    </p>
+            <p>
+                Sempre fui um bom aluno, nunca fiquei abaixo da média em nenhum dos vários anos em que estudo. Meus estudos se iniciaram na Escola Intentos, na própria cidade de Toledo; nessa escola eu permaneci desde o primário até o meu primeiro ano do ensino fundamental, e apesar de passar tanto tempo lá, nunca tive grandes problemas. Logo após finalizar o primeiro ano tive que mudar de escola, sendo transferido para o Colégio Alfa, no qual estudei desde o primeiro ano do ensino fundamental até o nono ano. Assim foi encerrada minha trajetória naquela escola, pois consegui vaga no IFPR.
+            </p>
 
-    
-    <h2 style="font-size: 36px; text-align:center; color:#2F9941; margin-top: 40px;">Momento atual e Perspectivas futuras</h2>
-    <p style="text-align: justify; font-size: 22px; margin-left: 5%; margin-right: 5%;">
-        Tenho um forte interesse pelas áreas que utilizam o raciocínio lógico como alicerce, como a Ciência da Computação, a Matemática e a Filosofia. Embora ainda esteja explorando qual caminho profissional seguir, percebo que minhas habilidades analíticas se destacam na resolução de problemas complexos. Busco uma formação acadêmica que desafie meu pensamento crítico e me ajude a transformar essa aptidão natural em uma carreira sólida.
-    </p>
-
-   
-    <h2 style="font-size: 36px; text-align:center; color:#2F9941; margin-top: 40px;">Onde vivo</h2>
-    <p style="text-align: justify; font-size: 22px; margin-left: 5%; margin-right: 5%;">
-        O Bairro Centro é o ponto onde a história de Toledo começou a ser escrita. Com o processo de colonização promovido pela Companhia Territorial Maripá na década de 1940, a região central foi desenhada para abrigar os primeiros estabelecimentos comerciais, instituições administrativas e os pontos de encontro da comunidade pioneira. Hoje, o Centro reúne a maior concentração de serviços, comércios, instituições de ensino e órgãos públicos do município, mantendo-se como o motor econômico e social da cidade.
-    </p>
-    <p style="text-align: justify; font-size: 22px; margin-left: 5%; margin-right: 5%;">
-        A paisagem urbana do Centro combina marcos da arquitetura tradicional e moderna. Entre seus maiores símbolos está a Catedral Metropolitana Cristo Rei, localizada no coração do bairro, cuja arquitetura imponente e praça no entorno formam um dos locais mais emblemáticos e frequentados pela população. O bairro também abriga o Parque Ecológico Diva Paim Barth (o famoso Lago Municipal) e o Teatro Municipal de Toledo, principal polo cultural da região Oeste do Paraná, onde acontecem grandes espetáculos, apresentações teatrais e eventos artísticos ao longo do ano.
-    </p>
-
- 
-    <hr style="margin: 50px 5%; border: 1px solid #ccc;">
-    
-    <h2 style="font-size: 36px; text-align:center; color:#2F9941; margin-top: 40px;">TCTs: Cuidados com a Saúde no Bairro Centro (Toledo-PR)</h2>
-    
-    <div style="background-color: #ffffff; margin: 0 5%; padding: 30px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
-        
-        <h3 style="color: #2F9941; font-size: 26px;">1. Ações e Atividades de Saúde no Centro</h3>
-        <p style="font-size: 20px; text-align: justify;">
-            No Bairro Centro de Toledo, os cuidados com a saúde fazem parte da rotina diária dos moradores e visitantes. Entre as principais iniciativas identificadas na região central, destacam-se:
-        </p>
-        <ul style="font-size: 20px; text-align: justify;">
-            <li><strong>Caminhadas e Atividades Físicas no Lago Municipal:</strong> A pista de caminhada do Parque Ecológico Diva Paim Barth é o principal ponto de prática de exercícios ao ar livre, corridas e uso das Academias da Terceira Idade (ATI) no Centro.</li>
-            <li><strong>Feiras de Saúde e Ações de Prevenção na Praça Willy Barth:</strong> Campanhas públicas de aferição de pressão arterial, testes de glicemia, orientação nutricional e vacinação organizadas periodicamente no coração comercial da cidade.</li>
-            <li><strong>Mobilizações no Pátio da Catedral Cristo Rei:</strong> Encontros para conscientização de datas importantes de saúde (Outubro Rosa, Novembro Azul, campanhas de doação de sangue e prevenção de doenças crônicas).</li>
-        </ul>
-
-        <h3 style="color: #2F9941; font-size: 26px; margin-top: 30px;">2. Registros, Mídias e Reportagens</h3>
-        <p style="font-size: 20px;">
-            Confira abaixo registros e referências sobre as ações de promoção à saúde no Centro de Toledo:
-        </p>
-        <ul style="font-size: 20px;">
-            <li><strong>Foto/Vídeo:</strong> Prática de exercícios na pista do Lago Municipal Diva Paim Barth </li>
-            <li><strong>Reportagem/Post:</strong> Mutirão de orientações de saúde e exames preventivos na Praça Willy Barth </li>
-        </ul>
-
-        <h3 style="color: #2F9941; font-size: 26px; margin-top: 30px;">3. Crônica do Cotidiano Central: "Manhã de Passos no Lago"</h3>
-        
-        <div style="background-color: #f4f1e8; padding: 25px; border-left: 5px solid #2F9941; font-size: 20px; line-height: 1.7;">
            
-            <p><strong>Tema:</strong> Cuidados com a Saúde no Centro de Toledo</p>
-            <hr style="border: 0; border-top: 1px dashed #2F9941; margin: 15px 0;">
+        </section>
 
-            <p style="text-align: justify;">
-                Às sete da manhã, a neblina que cobre o Lago Municipal no Centro de Toledo ainda nem se dissolveu por completo, mas o ritmo na pista de caminhada já é intenso. Entre uma passada e outra em volta da água, seu Arnaldo, morador antigo da região da Catedral, ajustava o passo ao lado do jovem Bugas, que tentava manter o fôlego segurando uma garrafa d'água em uma mão e o celular na outra.
+       
+        <section class="card-section">
+            <h2>Meu nascimento</h2>
+            <p>
+                Eu me lembro bem do mês de outubro, quando nasceu Lorenzo Babeto Falkowiski. Ele veio ao mundo em Maringá, no Paraná, trazendo muita alegria para nossa família. A expectativa pela sua chegada era grande, e finalmente chegou o momento de conhecê-lo. Foi um dia marcante para todos nós, daqueles que ficam guardados na memória. Desde então, Lorenzo começou sua própria história, cercado pela família e por novas experiências. Seu nascimento foi o início de uma caminhada que, com o passar dos anos, trouxe muitos momentos, aprendizados e lembranças.
             </p>
-            <p style="text-align: justify;">
-                — Vai com calma, rapaz! A saúde não se constrói numa corrida só — brincou seu Arnaldo, parando junto aos aparelhos da Academia da Terceira Idade ao lado do Horto das Esculturas.
-            </p>
-            <p style="text-align: justify;">
-                Bugas tirou os fones de ouvido, rindo sem graça:
-                — É a tentativa de recuperar o tempo perdido da semana inteira sentado na frente do computador, seu Arnaldo...
-            </p>
-            <p style="text-align: justify;">
-                — O segredo do coração forte não é o exagero de hoje, é o compromisso de amanhã — respondeu o senhor, enquanto alongava os braços com a serenidade de quem transformou o parque no seu quintal diário. — Um ar limpo bem cedo, uns dez minutos de caminhada e um copo d'água valem mais que qualquer promessa milagrosa.
-            </p>
-            <p style="text-align: justify;">
-                O rapaz olhou para o espelho d'água do parque, respirou fundo o ar fresco da manhã e desacelerou o relógio digital. Entendeu que cuidar de si, ali no meio da correria do Centro, era questão de hábito simples e constante.
-            </p>
-        </div>
-    </div>
+        </section>
 
-   
-    <footer style="text-align:center; padding: 30px; background-color:#222525; color:white; font-size: 16px; margin-top: 50px;">
-        <p> 2026 - Lorenzo Babeto Falkowiski | IFPR Campus Toledo</p>
+      
+        <section class="card-section">
+            <h2>Momento atual e Perspectivas futuras</h2>
+            <p>
+                Tenho um forte interesse pelas áreas que utilizam o raciocínio lógico como alicerce, como a Ciência da Computação, a Matemática e a Filosofia. Embora ainda esteja explorando qual caminho profissional seguir, percebo que minhas habilidades analíticas se destacam na resolução de problemas complexos. Busco uma formação acadêmica que desafie meu pensamento crítico e me ajude a transformar essa aptidão natural em uma carreira sólida.
+            </p>
+        </section>
+
+       
+        <section class="card-section">
+            <h2>Onde vivo</h2>
+            <p>
+                O Bairro Centro é o ponto onde a história de Toledo começou a ser escrita. Com o processo de colonização promovido pela Companhia Territorial Maripá na década de 1940, a região central foi desenhada para abrigar os primeiros estabelecimentos comerciais, instituições administrativas e os pontos de encontro da comunidade pioneira. Hoje, o Centro reúne a maior concentração de serviços, comércios, instituições de ensino e órgãos públicos do município, mantendo-se como o motor econômico e social da cidade.
+            </p>
+            <p>
+                A paisagem urbana do Centro combina marcos da arquitetura tradicional e moderna. Entre seus maiores símbolos está a Catedral Metropolitana Cristo Rei, localizada no coração do bairro, cuja arquitetura imponente e praça no entorno formam um dos locais mais emblemáticos e frequentados pela população. O bairro também abriga o Parque Ecológico Diva Paim Barth (o famoso Lago Municipal) e o Teatro Municipal de Toledo, principal polo cultural da região Oeste do Paraná.
+            </p>
+
+         
+            <h3>Galeria do Bairro Centro</h3>
+            <div class="carousel-container">
+                <div class="carousel-slides">
+                    <div class="carousel-slide">
+                      
+                        <img src="imagems\lago-municipal-de-toledo.jpg" alt="Lago Municipal Diva Paim Barth">
+                    </div>
+                    <div class="carousel-slide">
+                        
+                        <img src="imagems\images.jpg" alt="Catedral Cristo Rei Toledo">
+                    </div>
+                    <div class="carousel-slide">
+                       
+                        <img src="imagems\teatro-municipal-de-toledo.jpg" alt="Teatro e Praça no Centro de Toledo">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+      
+        <section class="card-section">
+            <h2>TCTs: Cuidados com a Saúde no Bairro Centro (Toledo-PR)</h2>
+
+            <h3>1. Ações e Atividades de Saúde no Centro</h3>
+            <p>
+                No Bairro Centro de Toledo, os cuidados com a saúde fazem parte da rotina diária dos moradores e visitantes. Entre as principais iniciativas identificadas na região central, destacam-se:
+            </p>
+            <ul>
+                <li><strong>Caminhadas e Atividades Físicas no Lago Municipal:</strong> A pista de caminhada do Parque Ecológico Diva Paim Barth é o principal ponto de prática de exercícios ao ar livre, corridas e uso das Academias da Terceira Idade (ATI) no Centro.</li>
+                <li><strong>Feiras de Saúde e Ações de Prevenção na Praça Willy Barth:</strong> Campanhas públicas de aferição de pressão arterial, testes de glicemia, orientação nutricional e vacinação organizadas periodicamente no coração comercial da cidade.</li>
+                <li><strong>Mobilizações no Pátio da Catedral Cristo Rei:</strong> Encontros para conscientização de datas importantes de saúde (Outubro Rosa, Novembro Azul, campanhas de doação de sangue e prevenção de doenças crônicas).</li>
+            </ul>
+
+            <h3>2. Registros, Mídias e Reportagens</h3>
+            <p>
+                Confira abaixo registros e referências sobre as ações de promoção à saúde no Centro de Toledo:
+            </p>
+            <ul>
+                <li><strong>Atividade Física:</strong> Prática de exercícios na pista do Lago Municipal Diva Paim Barth</li>
+                <li><strong>Ação Comunitária:</strong> Mutirão de orientações de saúde e exames preventivos na Praça Willy Barth</li>
+            </ul>
+
+            <h3 style="margin-top: 25px;">Vídeo Transversal: Cuidados com a Saúde</h3>
+            <p>Assista ao vídeo informativo sobre a importância dos Cuidados com a Saúde na rotina diária:</p>
+            <div class="video-embed-container">
+              
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Dlor8RNDVbY?si=cmAX8sAPDbWieauA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <h3 style="margin-top: 30px;">3. Crônica do Cotidiano Central: "Manhã de Passos no Lago"</h3>
+            <div class="cronica-box">
+                <p><strong>Tema:</strong> Cuidados com a Saúde no Centro de Toledo</p>
+                <hr style="border: 0; border-top: 1px dashed #2F9941; margin: 15px 0;">
+
+                <p>
+                    Às sete da manhã, a neblina que cobre o Lago Municipal no Centro de Toledo ainda nem se dissolveu por completo, mas o ritmo na pista de caminhada já é intenso. Entre uma passada e outra em volta da água, seu Arnaldo, morador antigo da região da Catedral, ajustava o passo ao lado do jovem Bugas, que tentava manter o fôlego segurando uma garrafa d'água em uma mão e o celular na outra.
+                </p>
+                <p>
+                    — Vai com calma, rapaz! A saúde não se constrói numa corrida só — brincou seu Arnaldo, parando junto aos aparelhos da Academia da Terceira Idade ao lado do Horto das Esculturas.
+                </p>
+                <p>
+                    Bugas tirou os fones de ouvido, rindo sem graça:  
+                    — É a tentativa de recuperar o tempo perdido da semana inteira sentado na frente do computador, seu Arnaldo...
+                </p>
+                <p>
+                    — O segredo do coração forte não é o exagero de hoje, é o compromisso de amanhã — respondeu o senhor, enquanto alongava os braços com a serenidade de quem transformou o parque no seu quintal diário. — Um ar limpo bem cedo, uns dez minutos de caminhada e um copo d'água valem mais que qualquer promessa milagrosa.
+                </p>
+                <p>
+                    O rapaz olhou para o espelho d'água do parque, respirou fundo o ar fresco da manhã e desacelerou o relógio digital. Entendeu que cuidar de si, ali no meio da correria do Centro, era questão de hábito simples e constante.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 - Lorenzo Babeto Falkowiski | IFPR Campus Toledo</p>
     </footer>
 
 </body>
