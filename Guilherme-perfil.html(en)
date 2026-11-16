@@ -1,0 +1,346 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guilherme - About Me</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f2f7f4;
+            color: #26352c;
+            line-height: 1.6;
+        }
+        header, footer {
+            background: #26734d;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+        .intro-header {
+            background: #2F9941;
+            font-size: 35px;
+        }
+        main {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 25px;
+            background: white;
+            border-radius: 8px;
+        }
+        h2 {
+            color: #26734d;
+            text-align: center;
+            font-size: 32px;
+            border-bottom: 2px solid #d6e9dc;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        section p {
+            text-align: justify;
+            font-size: 20px;
+            margin: 20px 2%;
+        }
+        .cronica {
+            background: #faf9f2;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        a {
+            color: #176b43;
+            overflow-wrap: anywhere;
+        }
+        iframe {
+            display: block;
+            max-width: 100%;
+            margin: 20px auto;
+        }
+        @media print {
+            body, main {
+                background: white;
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header class="intro-header">
+    Who Am I?
+</header>
+
+<main>
+
+<section>
+    <p>
+        Hello, my name is Guilherme Rodrigues Carvalho. I was born
+        in the city of Toledo, in the state of Paraná, on February
+        14, 2011. I am currently a student at IFPR in Toledo, which
+        is actually an extension of the IF campus in
+        Assis Chateaubriand.
+    </p>
+
+    <p>
+        I have always been a good student. Although I have studied
+        in public schools my entire life, I have always done well
+        academically. I have never received a grade below the
+        passing average throughout my school years.
+
+        My education began at Escola Ecológica Ari Arcacio Gosler,
+        in Toledo. I studied there from preschool until the fifth
+        grade of elementary school. Even though I spent many years
+        at that school, I never had any major problems.
+
+        After finishing fifth grade, I had to change schools
+        because that school only offered classes up to that grade.
+        I transferred to Colégio Estadual João Cândido, where I
+        studied from sixth to eighth grade.
+
+        The education was average. In general, the teachers were
+        not bad, but the students often disrupted lessons because
+        they could not remain quiet. Despite that, I continued
+        studying there.
+
+        After finishing eighth grade, another school was completed
+        across the street from where I lived. To make transportation
+        easier, I changed schools. It was an interesting school,
+        and the education was better than at my previous school.
+        However, I stayed there for only one year because I managed
+        to get a place at IFPR.
+    </p>
+</section>
+
+<section>
+    <h2>My Birth</h2>
+    <p>
+        I remember the month of February well, when Guilherme
+        Rodrigues Carvalho was born. He came into the world in
+        Toledo, Paraná, in the Jardim Europa neighborhood,
+        bringing great joy to our family.
+
+        Everyone was excited about his arrival, and finally
+        the moment came to meet him. It was a special day
+        for everyone, one of those moments that remain
+        in our memories.
+
+        From then on, Guilherme began his own story, surrounded
+        by family and new experiences. His birth was the beginning
+        of a journey that, over the years, brought many moments,
+        lessons, and memories.
+
+        That is how I remember that February: as the month
+        when Guilherme arrived and became part of our family.
+    </p>
+</section>
+
+<section>
+    <h2>Current Situation and Future Perspectives</h2>
+    <p>
+        Currently, I am working towards building my professional
+        future in the field of programming. I am interested
+        in technology and believe that working with programming
+        can provide me with opportunities for growth, learning,
+        and professional achievement.
+
+        At this moment, I am preparing myself by developing
+        my knowledge and acquiring the skills necessary
+        to enter the job market.
+
+        In the future, my goal is to work professionally
+        in programming and build a stable and successful career.
+        I want to keep learning, follow new technologies,
+        and constantly improve my skills.
+
+        I hope that, through effort and determination,
+        I can turn my interest in programming into a profession
+        and build a career that I can be proud of.
+    </p>
+</section>
+
+<section>
+    <h2>Where I Live</h2>
+    <p>
+        Jardim Gisela is a neighborhood in Toledo, in western
+        Paraná, which developed alongside the growth of the city.
+        Over the years, new families arrived in the area,
+        contributing to the formation of the community
+        and the development of streets, homes, businesses,
+        and services.
+
+        An interesting fact is that the growth of Jardim Gisela
+        reflects an important characteristic of Toledo:
+        the city developed from a small settlement formed
+        during the colonization period into a municipality
+        with several neighborhoods and a much larger population.
+
+        Therefore, places that today seem to have always been
+        part of the city are actually the result of urban expansion
+        over several decades.
+
+        Jardim Gisela is currently mainly a residential area
+        and is part of Toledo's history of growth. Its residents,
+        streets, and public spaces are part of the transformation
+        of the municipality and help build the community's identity.
+    </p>
+</section>
+
+<section>
+    <h2>My Neighborhood</h2>
+    <p>
+        An important event that took place in the neighborhood
+        was the inauguration of the new Colégio Estadual
+        Jardim Gisella.
+
+        The school received a new structure, with classrooms,
+        a library, laboratories, activity rooms, and a sports court.
+
+        The inauguration took place in February 2025 and was
+        attended by students, teachers, residents, and authorities.
+
+        This initiative can be related to the Contemporary
+        Cross-Cutting Themes because it involves education,
+        citizenship, and improving the quality of life
+        of people living in the area.
+
+        With the new school, students gained a better place
+        to study and carry out their activities.
+    </p>
+</section>
+
+<header>
+    <h1>Contemporary Cross-Cutting Themes:
+    Health Care</h1>
+    <p>Jardim Gisela Neighborhood — Toledo, Paraná</p>
+</header>
+
+<section>
+    <h2>1. Health Actions and Activities</h2>
+    <p>
+        In Jardim Gisela, health care involves disease prevention,
+        access to public services, and healthy habits.
+    </p>
+    <ul>
+        <li><strong>Health services:</strong> The area has municipal
+        services, including the Municipal Health Department
+        and the Maternal and Child Outpatient Clinic.</li>
+
+        <li><strong>Physical activities:</strong> Arroio Marreco
+        Linear Park provides space for walking and outdoor leisure.</li>
+
+        <li><strong>Leisure:</strong> Praça da Criança contributes
+        to recreation and family interaction.</li>
+
+        <li><strong>Prevention:</strong> Vaccination, balanced
+        nutrition, and medical checkups are important
+        for quality of life.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>2. Records, Media and Reports</h2>
+    <ul>
+        <li>Photo of Arroio Marreco Linear Park.</li>
+        <li>Photo of the Municipal Health Department.</li>
+        <li>Photo of Praça da Criança.</li>
+    </ul>
+
+    <p>
+        Source:
+        <a href="https://www.toledo.pr.gov.br/portais/saude"
+           target="_blank" rel="noopener noreferrer">
+            Toledo Municipal Health Department
+        </a>
+    </p>
+
+    <p>
+        <em>Images can be obtained from public sources
+        or taken by the student.</em>
+    </p>
+</section>
+
+<section>
+    <h2>3. Short Story: A Healthy Morning in Jardim Gisela</h2>
+    <div class="cronica">
+        <p>
+            One morning, Lucas was walking through Jardim Gisela
+            when he met Mrs. Helena, a resident who enjoyed
+            exercising outdoors.
+        </p>
+        <p>
+            "Walking a little every day is good for both
+            the body and the mind," she said.
+        </p>
+        <p>
+            Lucas realized that he spent too much time sitting
+            down and decided to change some habits. He started
+            walking more, drinking water, and paying attention
+            to his diet.
+        </p>
+        <p>
+            That day, he understood that taking care of his health
+            depends on small actions and also on access to health
+            services and recreational spaces in the neighborhood.
+        </p>
+    </div>
+    <p><em>Fictional story for school purposes.</em></p>
+</section>
+
+<section>
+    <h2>4. Contemporary Cross-Cutting Themes</h2>
+    <ul>
+        <li><strong>Health:</strong> Disease prevention and healthy habits.</li>
+        <li><strong>Environment:</strong> Preservation of parks and public spaces.</li>
+        <li><strong>Citizenship:</strong> Appreciation of public services and community participation.</li>
+        <li><strong>Food Education:</strong> Balanced nutrition and hydration.</li>
+        <li><strong>Family and Social Life:</strong> Interaction, leisure, and collective well-being.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>5. Conclusion</h2>
+    <p>
+        Promoting health in Jardim Gisela depends on healthy habits,
+        disease prevention, public services, and recreational spaces.
+        Small actions help improve the population's quality of life.
+    </p>
+</section>
+
+<section>
+    <h2>6. Research Sources</h2>
+    <ul>
+        <li>
+            <a href="https://www.toledo.pr.gov.br/portais/saude"
+               target="_blank" rel="noopener noreferrer">
+                Toledo City Hall — Health
+            </a>
+        </li>
+        <li>
+            <a href="https://cnes2.datasus.gov.br/"
+               target="_blank" rel="noopener noreferrer">
+                National Register of Health Facilities
+            </a>
+        </li>
+    </ul>
+</section>
+
+</main>
+
+<footer>
+    <p>Contemporary Cross-Cutting Themes — Health Care in Jardim Gisela</p>
+    <p>Toledo — Paraná, Brazil</p>
+</footer>
+
+<iframe width="560" height="315"
+    src="https://www.youtube.com/embed/7OE5cc7gPMQ"
+    title="YouTube video player"
+    allowfullscreen></iframe>
+
+<iframe width="560" height="315"
+    src="https://www.youtube.com/embed/969HAX-J28k"
+    title="YouTube video player"
+    allowfullscreen></iframe>
+
+</body>
+</html>
